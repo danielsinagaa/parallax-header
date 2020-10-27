@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Header</title>
+    <link rel="stylesheet" href="style.css">
+    
+ </head>
+<body>
+    <section>
+        <img src="bg.png" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <img src="daniel.png" id="daniel">
+        <h2 id="text">D A N I E L</h2>
+    </section>
+
+    <section>
+        <p style="color:antiquewhite">
+            Cat ipsum dolor sit amet, try to jump onto window and fall while scratching at wall or nap all day. Steal raw zucchini off kitchen counter. Stand with legs in litter box, but poop outside purrrrrr yet eat a rug and furry furry hairs everywhere oh no human coming lie on counter don't get off counter, scamper and am in trouble, roll over, too cute for human to get mad chase dog then run away. Rub face on everything poop in the plant pot yet eat the fat cats food so jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans walk on a keyboard. Morning beauty routine of licking self morning beauty routine of licking self hide head under blanket so no one can see, yet reward the chosen human with a slow blink you have cat to be kitten me right meow, scratch my tummy actually i hate you now fight me. Morning beauty routine of licking self. do not try to mix old food with new one to fool me! i'm going to lap some water out of my master's cup meow bury the poop bury it deep cats are a queer kind of folk so refuse to leave cardboard box. Leave hair everywhere. Destroy the blinds love flex claws on the human's belly and purr like a lawnmower cough hairball on conveniently placed pants be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day. Found somthing move i bite it tail. Refuse to drink water except out of someone's glass fall over dead (not really but gets sypathy) but meoooow adventure always hate dog this is the day car rides are evil. Meow in empty rooms this is the day chase laser. Whatever. Pet my belly, you know you want to; seize the hand and shred it! cry louder at reflection poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree.
+
+        </p>
+    </section>
+
+    <script type"text/javascript>
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let daniel = document.getElementById("daniel");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 +'px';
+        moon.style.left = -value * 0.6 +'px';
+        mountain.style.top = -value * 0.15 +'px';
+        road.style.top = value * 0.15 +'px';
+        daniel.style.top = value * -1 +'px';
+        text.style.top = value * 1 +'px';
+
+    })
+
+    </script>
+    
+</body>
+</html>
